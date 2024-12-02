@@ -2,7 +2,9 @@
   "name": "repro",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "build:webpack": "webpack",
     "build": "rspack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,11 +12,12 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@rspack/cli": "1.1.0",
-    "@rspack/core": "1.1.0"
+    "@rspack/cli": "1.1.4",
+    "@rspack/core": "1.1.4",
+    "webpack-cli": "^5.1.4",
+    "webpack": "^5.96.1"
   },
   "dependencies": {
-    "css-loader": "^7.1.2",
-    "css-minimizer-webpack-plugin": "^7.0.0"
+    "swc-loader": "^0.2.6"
   }
 }
